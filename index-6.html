@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe5ef">
+<title>For Anu — Happy Birthday 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--pink:#e85b91;--deep:#a83b69;--ink:#74334f;--pale:#fff4f8;--line:#f6c6d9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:linear-gradient(160deg,#fff0f6 0%,#ffe1ec 46%,#fff7fa 100%);overflow-x:hidden}
+main{width:100%;padding:20px 14px 60px}
+.hero,.section{width:min(100%,760px);margin:18px auto;background:#ffffffd9;border:1px solid #fff;border-radius:30px;box-shadow:0 14px 45px #a83b6914;position:relative;z-index:2;overflow:hidden}
+.hero{padding:40px 22px 32px;text-align:center}
+.glow{position:absolute;width:220px;height:220px;border-radius:50%;filter:blur(45px);opacity:.32;background:#f8a6c5;top:-100px;left:-80px}
+.eyebrow{font-size:11px;letter-spacing:3px;font-weight:700;color:#b86b8b}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif}
+h1{font-size:clamp(42px,10vw,76px);line-height:1.04;color:var(--pink);margin:15px 0;text-shadow:0 4px 16px #f8bfd4}
+h2{font-size:clamp(26px,6vw,36px);color:var(--deep);margin:0 0 12px}
+h3{font-size:22px;color:var(--deep);margin:0 0 8px}
+p{line-height:1.85;margin:10px 0}
+.heroText{font-size:16px;max-width:550px;margin:0 auto}
+.cake{font-size:82px;display:inline-block;animation:bob 2.4s ease-in-out infinite;margin:13px 0}
+@keyframes bob{50%{transform:translateY(-9px) rotate(2deg)}}
+.btn{border:0;border-radius:999px;padding:13px 20px;margin:8px 4px;background:linear-gradient(120deg,#f27eaa,#d94c86);color:#fff;font-size:14px;font-weight:700;box-shadow:0 7px 18px #d94c8630;cursor:pointer}
+.btn.alt{background:#fff0f6;color:#b63f70;border:1px solid #f6c6d9;box-shadow:none}
+.btn:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.section{padding:28px 22px;text-align:center}
+.section p{max-width:620px;margin:10px auto}
+.ribbon{display:inline-block;background:#fff0f6;border:1px solid var(--line);border-radius:999px;padding:7px 13px;color:#b34b77;font-size:12px;font-weight:700;margin-bottom:12px}
+.letter{display:none;background:#fff3f8;border:1px dashed #e8a4bf;border-radius:22px;padding:22px 18px;margin:18px auto 0;text-align:left;line-height:1.9;animation:show .6s ease}
+@keyframes show{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.bigheart{font-size:34px;margin:4px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.tile{padding:17px 12px;border-radius:20px;background:linear-gradient(145deg,#fff1f7,#fffafd);border:1px solid #f8d6e3;min-height:120px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.tile span{font-size:28px;margin-bottom:7px}.tile strong{font-size:14px;color:#a83b69}.tile small{font-size:12px;line-height:1.5;margin-top:5px;color:#9b647c}
+.timeline{max-width:560px;margin:18px auto 0;text-align:left}
+.step{display:flex;gap:13px;align-items:flex-start;margin:15px 0;padding:13px;background:#fff6fa;border-radius:16px}
+.dot{flex:0 0 34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#ffe0ec;font-size:17px}
+.step p{margin:3px 0;font-size:14px}
+.quote{font-family:'Playfair Display',Georgia,serif;font-size:clamp(19px,4.5vw,25px);line-height:1.6;color:#b13f70}
+.final{background:linear-gradient(140deg,#ffe5ef,#fff8fb);border:1px solid #f6c6d9}
+.footer{text-align:center;font-size:12px;color:#a66c85;margin:25px auto 0}
+#musicStatus{font-size:12px;color:#a66c85}
+.heart{position:fixed;bottom:-40px;z-index:1;pointer-events:none;animation:float linear forwards}
+@keyframes float{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+@media(max-width:420px){.grid{gap:9px}.tile{padding:14px 8px}.section{padding:25px 16px}.hero{padding:34px 17px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="glow"></div>
+    <div class="eyebrow">A LITTLE WORLD MADE JUST FOR YOU</div>
+    <div class="cake" aria-hidden="true">🎂</div>
+    <div class="eyebrow">TODAY IS YOUR SPECIAL DAY</div>
+    <h1>Happy Birthday<br>Anu! 💗</h1>
+    <p class="heroText">A tiny page, a whole lot of warm wishes, and a special surprise for a very special girl. 🌷</p>
+    <button class="btn" onclick="openLetter()">Open your surprise 🎁</button>
+    <button class="btn alt" onclick="document.getElementById('wishes').scrollIntoView({behavior:'smooth'})">Explore your wishes 🌸</button>
+    <div class="letter" id="letter" aria-live="polite">
+      <h3 style="text-align:center">Dear Anu, 💌</h3>
+      Happy Birthday, Anu! 🥹💗 I hope today brings you peaceful moments, happy surprises, lots of laughter, and memories you’ll always treasure. You deserve kindness, respect, and every good thing life has to offer. Keep believing in yourself, keep smiling in your own way, and never forget how special you are to the people who care about you. May Allah bless your new year with good health, peace, success, and barakah. Ameen. 🤍
+      <p style="text-align:center;font-size:23px">🌷 💗 🧸 🎀 🦋</p>
+    </div>
+  </section>
+
+  <section class="section" id="wishes">
+    <div class="ribbon">A FEW LITTLE WISHES ✨</div>
+    <h2>For your new chapter</h2>
+    <p>May this year be gentle with your heart and full of beautiful opportunities. Here are some wishes, wrapped up with care. 💕</p>
+    <div class="grid">
+      <div class="tile"><span>🌼</span><strong>Happiness</strong><small>May you find reasons to smile every day.</small></div>
+      <div class="tile"><span>🕊️</span><strong>Peace</strong><small>May your heart feel calm and safe.</small></div>
+      <div class="tile"><span>🌟</span><strong>Success</strong><small>May your efforts lead you to your dreams.</small></div>
+      <div class="tile"><span>🤍</span><strong>Barakah</strong><small>May Allah bless you in all that is good.</small></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="ribbon">A PROMISE OF RESPECT 🤍</div>
+    <h2>Always choose kindness</h2>
+    <p class="quote">“Real care means honesty, loyalty, patience, respect, and making space for each other to grow.”</p>
+    <p>My intention is to stay sincere and loyal to you, to value your feelings, and to support your dreams. InshaAllah, if Allah wills and the time is right, I hope our future can lead to marriage—with mutual respect, family blessings, and happiness. Ameen. 🌙</p>
+  </section>
+
+  <section class="section">
+    <div class="ribbon">A FEW THINGS I WISH FOR YOU 🌸</div>
+    <h2>Your little birthday list</h2>
+    <div class="timeline">
+      <div class="step"><div class="dot">💗</div><div><strong>Keep being yourself</strong><p>Your thoughts, dreams, and individuality matter. Never feel you have to change who you are to be valued.</p></div></div>
+      <div class="step"><div class="dot">🌷</div><div><strong>Reach your dreams</strong><p>I hope you get chances to learn, explore, and achieve the things that make you proud.</p></div></div>
+      <div class="step"><div class="dot">🫶</div><div><strong>Feel appreciated</strong><p>May the people around you treat you with warmth, care, and respect—not just today, but every day.</p></div></div>
+      <div class="step"><div class="dot">🌙</div><div><strong>Stay close to what is good</strong><p>May Allah guide you, protect you, and make your path full of khair. Ameen.</p></div></div>
+    </div>
+  </section>
+
+  <section class="section final">
+    <div class="bigheart">💞</div>
+    <h2>One last birthday wish...</h2>
+    <p class="quote">May your smile find its way back to you, even on ordinary days.</p>
+    <p>Happy Birthday once again, Anu. Thank you for being you. May this year bring you countless lovely memories, sincere people, and reasons to feel hopeful. 🎂🌸</p>
+    <button class="btn" onclick="celebrate()">Send you a shower of hearts 💖</button>
+    <button class="btn alt" id="musicBtn" onclick="toggleMusic()">🎵 Play a little tune</button>
+    <div id="musicStatus" aria-live="polite">Tap to play a gentle original tune.</div>
+  </section>
+  <div class="footer">Made with care for Anu · Happy Birthday 💗</div>
+</main>
+<script>
+function makeHearts(n=15){const symbols=["💗","💕","💖","🌸","✨","🦋"];for(let i=0;i<n;i++){const e=document.createElement("span");e.className="heart";e.textContent=symbols[Math.floor(Math.random()*symbols.length)];e.style.left=Math.random()*100+"vw";e.style.fontSize=(15+Math.random()*23)+"px";e.style.animationDuration=(4+Math.random()*4)+"s";document.body.appendChild(e);setTimeout(()=>e.remove(),8200)}}
+function openLetter(){document.getElementById("letter").style.display="block";makeHearts(30)}
+function celebrate(){makeHearts(45)}
+setInterval(()=>makeHearts(1),1900);
+// Original browser-generated notes; no separate audio file is required.
+let audioCtx=null,playing=false,timer=null,index=0;
+const melody=[523.25,659.25,783.99,659.25,587.33,698.46,880,698.46,523.25,587.33,659.25,523.25];
+function note(){if(!playing||!audioCtx)return;const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type="sine";o.frequency.value=melody[index%melody.length];g.gain.setValueAtTime(.0001,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(.085,audioCtx.currentTime+.04);g.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.38);o.connect(g);g.connect(audioCtx.destination);o.start();o.stop(audioCtx.currentTime+.4);index++;timer=setTimeout(note,430)}
+async function toggleMusic(){const b=document.getElementById("musicBtn"),s=document.getElementById("musicStatus");if(!playing){audioCtx=audioCtx||new(window.AudioContext||window.webkitAudioContext)();await audioCtx.resume();playing=true;b.textContent="⏸ Pause the tune";s.textContent="A little tune is playing 🎶";note()}else{playing=false;clearTimeout(timer);await audioCtx.suspend();b.textContent="🎵 Play a little tune";s.textContent="Tune paused";}}
+</script>
+</body>
+</html>
